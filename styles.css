@@ -17,6 +17,6 @@ input {
 }
 
 /* Adds spacing between rows in container */
-.container .row {
+#field {
     margin: 0px 0px 15px 0px
 }

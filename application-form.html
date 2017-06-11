@@ -21,23 +21,23 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid">
     <!-- Beginning of form -->
     <form action="/application-success" method="post">
 
-      <div class="row">
+      <div class="row" id="field">
         First Name <input type="text" name="first_name" required>
       </div>
 
-      <div class="row">
+      <div class="row" id="field">
         <span class="last_name">Last Name</span> <input type="text" name="last_name" required>
       </div>
 
-      <div class="row">
+      <div class="row" id="field">
         Salary Requirement $ <input type="number" name="salary_requirement" min="0" required>
       </div>
 
-      <div class="row">
+      <div class="row" id="field">
         Job Applying For 
           <select>
             <option value="software_engineer">Software Engineer</option>
@@ -46,7 +46,7 @@
           </select>
       </div>
 
-      <div class="row">
+      <div class="row" id="field">
         <input type="submit">
       </div>
 
