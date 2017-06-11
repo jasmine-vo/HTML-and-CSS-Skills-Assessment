@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Application Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>Ubermelon Application Form</h3><br>
+
+        <p class="explanatory_text">
+          Thank you for your interest in working for Ubermelon! Please fill out the following required fields to begin your application.
+        </p><br>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Beginning of form -->
+    <form action="/application-success" method="post">
+
+      <div class="row">
+        First Name <input type="text" name="first_name" required>
+      </div>
+
+      <div class="row">
+        <span class="last_name">Last Name</span> <input type="text" name="last_name" required>
+      </div>
+
+      <div class="row">
+        Salary Requirement $ <input type="number" name="salary_requirement" min="0" required>
+      </div>
+
+      <div class="row">
+        Job Applying For 
+          <select>
+            <option value="software_engineer">Software Engineer</option>
+            <option value="qa_engineer">QA Engineer</option>
+            <option value="product_manager">Product Manager</option>
+          </select>
+      </div>
+
+      <div class="row">
+        <input type="submit">
+      </div>
+
+    </form>
+    <!-- End of form -->
+  </div>
+
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+
+</body>
+
+</html>
